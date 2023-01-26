@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1 id="title">Encuesta de Practica</h1>
+    <p id="description">El principal objetivo de este trabajo es poner en practica todo lo aprendido</p>
+  </header>
+  <form id="survey-form" action="#">
+    <div id="formulario">
+      <label for="name" id="name-label">Nombre:</label>
+      <input type="text" id="name" name="name" placeholder="Introduce tu nombre" required>
+    </div>
+    <div id="formulario">
+      <label for="email" id="email-label">Email:</label>
+      <input type="email" id="email" name="email" placeholder="Introduce tu email" required>
+    </div>
+    <div id="formulario">
+      <label for="number" id="number-label" name="number">Edad:</label>
+      <input type="number" id="number" min="5" max="100" name="number" placeholder="Edad" required>
+    </div>
+    <div id="formulario">
+      <p>¿Qué es lo que prefieres más de estas opciones?</p>
+      <select name="opciones" id="dropdown" requiered  style="color: gray;">
+        <option disabled selected value  style="color: gray;">Selecciona una opción</option>
+        <option value="ejercicio" style="color: #F67519;">Ejercicio</option>
+        <option value="viajar" style="color: #F67519;">Viajar</option>
+        <option value="casa" style="color: #F67519;">Quedarme en casa</option>
+        <option value="leer" style="color: #F67519;">Leer</option>
+      </select>
+    </div>
+    <div id="formulario1">
+      <p>Le tienes miedo a los perros</p>
+      <label class="radio" for="radio">
+        <input type="radio" value="si" name="radio" checked>
+        Si
+      </label>
+      <label class="radio" for="radio">
+        <input type="radio" value="no" name="radio">
+        No
+      </label>
+      <label class="radio" for="radio">
+        <input type="radio" value="alergia"name="radio" >
+        Soy alergico a los perros 
+      </label>
+    </div>
+    <div id="formulario1">
+      <p>¿Qué tipo de sangre eres?</p>
+      <label class="caja" for="caja">
+        <input type="checkbox" name="caja" value="a+" checked>
+        A+
+      </label>
+      <label class="caja" for="caja">
+        <input type="checkbox" name="caja" value="b+">
+        B+
+      </label>
+      <label class="caja"for="caja">
+        <input type="checkbox" name="caja" value="nodato">
+        Desconosco el dato 
+      </label>
+    </div>
+    <div id="formulario">
+      <p >Tu opinion cuenta para seguir mejorando</p>
+      <textarea name="comentario" id="comentario" placeholder="Introduce tu comentario aquí"></textarea>
+    </div>
+    <div id="formulario">
+      <button id="submit" type="submit">Enviar</button>
+    </div>
+  </form>
+  
+</body>
+</html>

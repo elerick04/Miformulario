@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+  * {
+  font-family: 'Roboto', sans-serif;
+  font-size: 19px;
+  font-weight: 600;
+  margin: 0px;
+}
+
+body {
+  display:block;
+  background-color: #F67519;
+  
+}
+
+header h1{
+  text-align: center;
+  font-size: 2.1rem;
+  font-weight: 800;
+  padding: 2.4rem 0rem 0rem 0rem ;
+}
+
+header p {
+  text-align: center;
+  font-size: 1.2rem;
+  font-style: italic;
+}
+
+form {
+  background-color: black;
+  color: aliceblue;
+  width: 80vh;
+  display:block;
+  margin: 1.25rem auto;
+  padding: 1.5rem;
+  border-radius: 15px;
+}
+
+form #formulario {
+  display: flex;
+  flex-flow: column wrap;
+  margin: .8rem 0rem;
+}
+
+#formulario #name, #email, #number  {
+  height: 2rem;
+  border-radius: 5px;
+  border: none;
+  padding-left: 10px;
+  margin: 8px 0px 10px;
+}
+
+#formulario #name-label, #email-label, #number-label {
+  color:#f7a46a;
+}
+
+#formulario select {
+  height: 2rem;
+  border-radius: 5px;
+  border: none;
+  padding-left: 10px;
+  margin: 8px 0px 10px;
+}
+
+#formulario1 {
+  display: flex;
+  flex-flow: column wrap;
+  margin: 2rem 0rem;
+}
+
+p {
+  color:#f7a46a;
+  padding: 0px 0px 10px;
+}
+
+#formulario1 .radio, .caja {
+  margin: 3px 0px;
+}
+
+#comentario {
+  height: 25vh;
+  border-radius: 5px;
+  border: none;
+  padding: 5px 10px;
+  margin: 8px 0px 10px;
+}
+
+#formulario button {
+  color: aliceblue;
+  background-color: #F67519;
+  height: 5vh;
+  border-radius: 5px;
+}
